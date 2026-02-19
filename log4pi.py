@@ -46,4 +46,3 @@ def log4pi ( logger, severity, mensaje ) :
 if __name__ == "__main__" :  
 
     loger = init_log ( LOG_FILENAME )
-    

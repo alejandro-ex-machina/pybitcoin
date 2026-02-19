@@ -18,7 +18,7 @@
   { "debug_digest"           : "Digest: {digest}" },
   { "log_user_unauthorized"  : "Nicht autorisierter Benutzer mit sha256 Passwort {digest}." },
   { "log_user_authorized"    : "Autorisierter Benutzer mit sha256 Passwort {digest}." },  { "connection_failed"      : "The connection failed." },
-  { "connection_failed"      : "The connection failed." },
-  { "request_timed_out"      : "The request timed out." },
-  { "http_error_occurred"    : "An HTTP error occurred: {error}" },
-  { "an_error_occurred"      : "An error occurred: {error}" }]
+  { "connection_failed"      : "Die Anfrage ist abgelaufen."},
+  { "request_timed_out"      : "Die Verbindung ist fehlgeschlagen." },
+  { "http_error_occurred"    : "Ein HTTP-Fehler ist aufgetreten: " },
+  { "an_error_occurred"      : "Ein Fehler ist aufgetreten: " }]
