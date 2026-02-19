@@ -17,7 +17,7 @@
   { "debug_saved"            : "Saved: {saved}" },
   { "debug_digest"           : "Digest: {digest}" },
   { "log_user_unauthorized"  : "Nicht autorisierter Benutzer mit sha256 Passwort {digest}." },
-  { "log_user_authorized"    : "Autorisierter Benutzer mit sha256 Passwort {digest}." },  { "connection_failed"      : "The connection failed." },
+  { "log_user_authorized"    : "Autorisierter Benutzer mit sha256 Passwort {digest}." },  
   { "connection_failed"      : "Die Anfrage ist abgelaufen."},
   { "request_timed_out"      : "Die Verbindung ist fehlgeschlagen." },
   { "http_error_occurred"    : "Ein HTTP-Fehler ist aufgetreten: " },
