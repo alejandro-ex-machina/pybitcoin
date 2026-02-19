@@ -1,0 +1,7 @@
+ [ { "enter_password"        : "Passwort eingeben: "  },
+   { "wrong_password"        : "Falsches Passwort" },
+   { "password_ok"           : "Passwort korrekt."   },
+   { "retries"               : "Wiederholungsversuche"           },
+   { "usuario_no_autorizado" : "Der Benutzer ist nicht autorisiert." },
+   { "usuario_autorizado"    : "Benutzer autorisiert." },
+   { "log_started"           : "Logger initialisiert"  } ]

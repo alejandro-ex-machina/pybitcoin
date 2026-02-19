@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling>=1.24.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pybitcoin"
+version = "0.1.0"
+description = "CLI y API simple para consultar precio de Bitcoin con autenticacion por hash."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "requests>=2.31.0",
+  "flask>=3.0.0",
+]
+

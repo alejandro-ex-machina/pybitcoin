@@ -1,0 +1,7 @@
+ [ { "enter_password"        : "Enter password: "  },
+   { "wrong_password"        : "Wrong password" },
+   { "password_ok"           : "Correct password."   },
+   { "retries"               : "retries"           },
+   { "usuario_no_autorizado" : "User not authorized." },
+   { "usuario_autorizado"    : "User authorized." },
+   { "log_started"           : "Logger initialized"  } ]
