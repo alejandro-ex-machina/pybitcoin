@@ -84,8 +84,3 @@ Endpoints:
 - La app usa `shake_256(...).hexdigest(20)` para validar contraseña.
 - Se recomienda no registrar datos sensibles en logs en producción.
 - El directorio de traducciones se llama `translations`, y está referenciado así en `config.py`.
-
-## Mejoras pendientes
-
-- Capturar errores de red y timeouts en la consulta de Binance.
-- Añadir tests unitarios para autenticación, i18n y API.

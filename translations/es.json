@@ -17,5 +17,8 @@
   { "debug_saved"            : "Saved: {saved}" },
   { "debug_digest"           : "Digest: {digest}" },
   { "log_user_unauthorized"  : "Usuario no autorizado con password sha256 {digest}." },
-  { "log_user_authorized"    : "Usuario autorizado con password sha256 {digest}." }
-]
+  { "log_user_authorized"    : "Usuario autorizado con password sha256 {digest}." },
+  { "connection_failed"      : "La conexión falló." },
+  { "request_timed_out"      : "La solicitud expiró." },
+  { "http_error_occurred"    : "Ocurrió un error HTTP: " },
+  { "an_error_occurred"      : "Ocurrió un error: " }]
