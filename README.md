@@ -59,11 +59,9 @@ python main.py
 
 Flujo:
 
-1. Pide contraseña.
+1. Pide contraseña (1234).
 2. Si valida, consulta el precio de BTC.
 3. Muestra en pantalla `1 BTC = <precio> $`.
-
-También puedes usar `run.bat` en Windows.
 
 ## Uso (API Flask)
 
@@ -87,8 +85,7 @@ Endpoints:
 - Se recomienda no registrar datos sensibles en logs en producción.
 - El directorio de traducciones se llama `translations`, y está referenciado así en `config.py`.
 
-## Mejoras recomendadas
+## Mejoras pendientes
 
 - Capturar errores de red y timeouts en la consulta de Binance.
-- Estandarizar codificación UTF-8 en todos los archivos.
 - Añadir tests unitarios para autenticación, i18n y API.
