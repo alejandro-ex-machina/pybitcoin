@@ -1,7 +1,21 @@
- [ { "enter_password"        : "Enter password: "  },
-   { "wrong_password"        : "Wrong password" },
-   { "password_ok"           : "Correct password."   },
-   { "retries"               : "retries"           },
-   { "usuario_no_autorizado" : "User not authorized." },
-   { "usuario_autorizado"    : "User authorized." },
-   { "log_started"           : "Logger initialized"  } ]
+[
+  { "enter_password"         : "Enter password: " },
+  { "wrong_password"         : "Wrong password" },
+  { "password_ok"            : "Correct password." },
+  { "retries"                : "retries" },
+  { "usuario_no_autorizado"  : "User not authorized." },
+  { "usuario_autorizado"     : "User authorized." },
+  { "log_started"            : "Logger initialized" },
+  { "file_not_found"         : "Error: File {PWD_FILENAME} not found" },
+  { "err_file_not_found"     : "Error: File {pwd_filename} not found." },
+  { "log_file_not_found"     : "{pwd_filename} not found." },
+  { "err_file_no_permission" : "Error: No permission to read the file." },
+  { "log_file_no_permission" : "No permission to read {pwd_filename}." },
+  { "err_file_read"          : "Error reading file: {error}" },
+  { "log_file_read"          : "Error reading {pwd_filename}. Exception: {error}" },
+  { "debug_password"         : "Password: {password}" },
+  { "debug_saved"            : "Saved: {saved}" },
+  { "debug_digest"           : "Digest: {digest}" },
+  { "log_user_unauthorized"  : "Unauthorized user with sha256 password {digest}." },
+  { "log_user_authorized"    : "Authorized user with sha256 password {digest}." }
+]

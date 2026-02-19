@@ -25,36 +25,35 @@ def get_saved_password () :
             return saved
 
     except FileNotFoundError :
-        msg = "file_not_found"
-        print ( f"Error: File {PWD_FILENAME} not found." )
-        log4pi ( logger, logging.ERROR, f"{PWD_FILENAME} no encontrado" )
+        print ( i18n ( "err_file_not_found", LOCALES ).format ( pwd_filename = PWD_FILENAME ) )
+        log4pi ( logger, logging.ERROR, i18n ( "log_file_not_found", LOCALES ).format ( pwd_filename = PWD_FILENAME ) )
     
     except PermissionError :
-        print ( "Error: No permission to read the file." )
-        log4pi ( logger, logging.ERROR, f"Sin permiso para leer {PWD_FILENAME}" )
+        print ( i18n ( "err_file_no_permission", LOCALES ) )
+        log4pi ( logger, logging.ERROR, i18n ( "log_file_no_permission", LOCALES ).format ( pwd_filename = PWD_FILENAME ) )
     
     except IOError as e :
-        print ( f"Error reading file: {e}" )
-        log4pi ( logger, logging.ERROR, f"Error leyendo {PWD_FILENAME} excepcion: {e}" )
+        print ( i18n ( "err_file_read", LOCALES ).format ( error = e ) )
+        log4pi ( logger, logging.ERROR, i18n ( "log_file_read", LOCALES ).format ( pwd_filename = PWD_FILENAME, error = e ) )
 
 def request_password () :
     # Captura password y compara su hash con el valor persistido.
     saved    = get_saved_password ()
-    password = getpass.getpass ( prompt = i18n("enter_password", LOCALES ()),  echo_char = '*' )
+    password = getpass.getpass ( prompt = i18n("enter_password", LOCALES),  echo_char = '*' )
     digest   = hashlib.shake_256 ( password.encode( 'utf-8') ).hexdigest( 20 )
 
     if DEBUG :  
-        print ( f"Password: {password}" )
-        print ( f"Saved: {saved}" )
-        print ( f"Digest: {digest}" )
+        print ( i18n ( "debug_password", LOCALES ).format ( password = password ) )
+        print ( i18n ( "debug_saved", LOCALES ).format ( saved = saved ) )
+        print ( i18n ( "debug_digest", LOCALES ).format ( digest = digest ) )
 
     # logger.info ( f"Input {digest} - Stored {saved}" )
 
     if digest != saved :
-        log4pi ( logger, logging.WARNING, f"Usuario no autorizado con password sha256 {digest}." )
+        log4pi ( logger, logging.WARNING, i18n ( "log_user_unauthorized", LOCALES ).format ( digest = digest ) )
         return False
     else :
-        msg = f"Usuario autorizado con password sha256 {digest}."
+        msg = i18n ( "log_user_authorized", LOCALES ).format ( digest = digest )
         log4pi ( logger, logging.INFO, msg )
         return True
 
@@ -62,7 +61,7 @@ def enter () :
 
     # Reintenta autenticacion hasta 3 veces antes de devolver error.
     
-    #cls ()
+    cls ()
 
     password_ok = False
        
@@ -71,10 +70,10 @@ def enter () :
         password_ok = request_password ()
 
         if password_ok : 
-            print ( i18n ( "password_ok", LOCALES () ) )
+            print ( i18n ( "password_ok", LOCALES ) )
             break
         else :
-            print ( i18n ( "wrong_password", LOCALES () ) )
+            print ( i18n ( "wrong_password", LOCALES ) )
 
     return password_ok 
         

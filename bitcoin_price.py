@@ -17,6 +17,7 @@ def btc_price () :
 
     cotizacion = float ( data [ "price" ] )
     log4pi ( logger, logging.INFO, f"request {URL_API_BTC} - response {cotizacion}" )
+    log4pi ( logger, logging.INFO, f"response {cotizacion}" )
     
     return cotizacion
 

@@ -61,8 +61,14 @@ def btc_post ():
 
         retorno = jsonify({ 'ERROR' : "SECRET ERROR"})
 
-        if ( secret == saved ) : retorno = jsonify({ 'BTC' : btc_price ()})
-        logger.info ( "/BTC endpoint" )
+        if ( secret == saved ) : 
+            retorno = jsonify({ 'BTC' : btc_price ()})
+            logger.warning ( f"/BTC endpoint {retorno}" )
+
+        else : 
+            retorno = jsonify({ 'Error' :'wrong_password' })
+            logger.warning ( f"/BTC endpoint {retorno}" )
+
 
         return retorno
     
