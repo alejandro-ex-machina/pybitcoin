@@ -25,6 +25,7 @@ def get_saved_password () :
             return saved
 
     except FileNotFoundError :
+        msg = "file_not_found"
         print ( f"Error: File {PWD_FILENAME} not found." )
         log4pi ( logger, logging.ERROR, f"{PWD_FILENAME} no encontrado" )
     
@@ -61,7 +62,7 @@ def enter () :
 
     # Reintenta autenticacion hasta 3 veces antes de devolver error.
     
-    cls ()
+    #cls ()
 
     password_ok = False
        

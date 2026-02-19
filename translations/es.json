@@ -1,7 +1,10 @@
- [ { "enter_password"        : "Teclea contraseña: "  },
-   { "wrong_password"        : "Password incorrecta" },
-   { "password_ok"           : "Password correcta."   },
-   { "retries"               : "reintentos"           },
-   { "usuario_no_autorizado" : "El usuario no está autorizado." },
-   { "usuario_autorizado"    : "Usuario autorizado." },
-   { "log_started"           : "Logger inicializado"  } ]
+[
+{ "enter_password"        : "Teclea contraseña: "  },
+{ "wrong_password"        : "Password incorrecta" },
+{ "password_ok"           : "Password correcta."   },
+{ "retries"               : "reintentos"           },
+{ "usuario_no_autorizado" : "El usuario no está autorizado." },
+{ "usuario_autorizado"    : "Usuario autorizado." },
+{ "log_started"           : "Logger inicializado"  }, 
+{ "file_not_found"        : "Error: Archivo {PWD_FILENAME} no encontrado" }
+]
